@@ -254,6 +254,7 @@ img { max-width: 100%; display: block; }
   justify-content: center;
   font-size: 2rem;
   flex-shrink: 0;
+  overflow: hidden;
 }
 
 .app-card-info { flex: 1; }
@@ -384,6 +385,41 @@ img { max-width: 100%; display: block; }
 .mt-md        { margin-top: 1rem; }
 .mt-lg        { margin-top: 2rem; }
 .mb-sm        { margin-bottom: 0.5rem; }
+
+/* ─── App icon (hero) ────────────────────────────────────────────────────── */
+.hero-app-icon {
+  width: 96px;
+  height: 96px;
+  border-radius: 22px;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 8px 32px rgba(0, 196, 240, 0.18);
+}
+
+/* ─── Screenshots strip ──────────────────────────────────────────────────── */
+.screenshots-strip-wrapper {
+  padding: 2rem 0 2.5rem;
+}
+
+.screenshots-strip {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  padding: 0.25rem 1.5rem 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.screenshots-strip::-webkit-scrollbar { display: none; }
+
+.screenshots-strip img {
+  height: 500px;
+  width: auto;
+  max-width: none;
+  border-radius: 16px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
 
 /* ─── Responsive ─────────────────────────────────────────────────────────── */
 @media (max-width: 600px) {
