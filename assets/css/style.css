@@ -60,11 +60,16 @@ img { max-width: 100%; display: block; }
 .nav-brand {
   font-weight: 700;
   font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
   color: var(--text);
   letter-spacing: 0.02em;
   white-space: nowrap;
 }
-.nav-brand:hover { text-decoration: none; color: var(--accent); }
+.nav-brand:hover { text-decoration: none; }
+
+.brand-tinker { color: #FFFFFF; }
+.brand-bench  { color: #999999; }
+.brand-labs   { color: #0398FF; }
 
 .nav-links {
   display: flex;
