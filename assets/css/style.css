@@ -267,6 +267,33 @@ img { max-width: 100%; display: block; }
 .app-card-info p  { color: var(--text-muted); font-size: 0.875rem; }
 .app-card-arrow   { color: var(--text-dim); font-size: 1.25rem; }
 
+.coming-soon-cta {
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.65rem 1.5rem;
+  cursor: default;
+}
+
+.badge-coming-soon {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  background: var(--bg-header);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.1em 0.45em;
+  vertical-align: middle;
+  margin-left: 0.4rem;
+}
+
 /* ─── Divider ────────────────────────────────────────────────────────────── */
 .divider {
   border: none;
