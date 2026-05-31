@@ -247,6 +247,7 @@ img { max-width: 100%; display: block; }
   transition: border-color 0.15s;
 }
 .app-card:hover { border-color: var(--accent); text-decoration: none; }
+.app-card + .app-card { margin-top: 1rem; }
 
 .app-card-icon {
   width: 72px;
@@ -455,6 +456,7 @@ img { max-width: 100%; display: block; }
   overflow-x: auto;
   padding: 0.25rem 1.5rem 1rem;
   scroll-snap-type: x mandatory;
+  scroll-padding-left: 1.5rem;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
 }
